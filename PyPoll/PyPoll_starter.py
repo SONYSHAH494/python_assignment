@@ -17,10 +17,10 @@ with open(input_file) as election_data:
         total_votes += 1
         candidate_name = row[2]
 
-if candidate_name not in candidate_votes:  
-    candidate_votes[candidate_name] = 0
+        if candidate_name not in candidate_votes:  
+            candidate_votes[candidate_name] = 0
 
-candidate_votes[candidate_name] += 1
+        candidate_votes[candidate_name] += 1
 
 with open(output_file,"w") as txt_file:
     election_results = (
@@ -40,8 +40,8 @@ with open(output_file,"w") as txt_file:
             winning_count = votes
             winning_candidate = candidate
 
-        candidate_results = f"{candidate}:{vote_percentage:.3f}% ({votes})\n"  
-        print(candidate_results,end="")   
+        candidate_results = f"{candidate}: {vote_percentage:.3f}% ({votes})\n"  
+        print(candidate_results, end="")   
         txt_file.write(candidate_results)  
 
     winning_summary = (
