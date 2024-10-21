@@ -1,1 +1,6 @@
 # python_assignment
+In this assignment we were given the resources that were two csv datas :One was financial database where we were given the financial records of a company. It included name of months and profit/loss in that particular month.We created a Python script that analyzed the records and we had to calculate total number of months,net total amount of "profit/losses" over the entire period,changes in "profit/losses" over the entire period,and the average of those changes.Also we had to calculate greatest increase and decrease in profits.
+Our task was to create a Python Script,run the code and export a text file with the results.
+The second data was a set of poll data for a small,rural town vote counting process.We were given Voter ID,county and Candidate names.From which we created a Python script that gave us total number of votes cast,list of candidates and their respective vote counts and also the name of winner of the election based on popular votes.
+We did the required coding and commited and pushed it to Github.
+So this repository includes two folders 1)PyBank 2)PyPoll .Each Include Python script for the calculations and a Analysis Folder which includes a text file with the results.
